@@ -1,0 +1,16 @@
+.node {
+	stroke-width: 1px;
+	fill: #fff;
+}
+
+.node--activity {
+	stroke: red;
+}
+
+.node--decision {
+	stroke: blue;
+}
+
+.node--selected {
+	stroke-width: 3px;
+}

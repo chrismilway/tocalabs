@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 2.5rem calc(100% - 2.5rem);
+    grid-template-columns: calc(100% - 12rem) 12rem;
+    grid-template-areas: "controls controls" "canvas list";
+}
+
+.app-controls {
+    grid-area: controls;
+    padding: .5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.app-window {
+    grid-area: canvas;
+    position: relative;
+    background: #f6f6f6;
+}
+
+.app-list {
+    grid-area: list;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+}
+
+.app button {
+    border: 0;
+    background: transparent;
+    font-size: .8rem;
+    color: #444;
+}
+
+.app-list-item {
+    padding: .75rem;
+}
